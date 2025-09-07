@@ -1,0 +1,26 @@
+# สร้างโปรแกรมคำนวณผลรวมคะแนนโดยป้อนรหัส น.ศ. ชื่อน.ศ. คะแนนกลางภาค ปลายภาค เก็บ ทางแป้นพิมพ์12
+# และแสดงผลข้อมูลที่ป้อนและคะแนนรวมที่คำนวณได้
+print('+++++++++++++++++++++++++++++')
+print('  โปรแกรม Score Total')
+print('+++++++++++++++++++++++++++++')
+stu_id = input('ป้อนรหัส นศ.: ')
+stu_name = input('ป้อนชื่อ นศ.: ')
+mid_score = input('ป้อนคะแนนกลางภาค: ')
+final_score = input('ป้อนคะแนนปลายภาค: ')
+quiz_score = input('ป้อนคะแนนเก็บ: ')
+print('+++++++++++++++++++++++++++++')
+sum_score = float(mid_score) + float(final_score) + float(quiz_score)
+
+print(f'รหัส นศ. {stu_id} ชื่อ {stu_name}')
+print(f'กลางภาค {mid_score} ปลายภาค {final_score} เก็บ {quiz_score} รวมเป็น {sum_score} คะแนน')
+print('+++++++++++++++++++++++++++++')
+# , + .format
+print('รหัส นศ.',stu_id,'ชื่อ',stu_name)
+print('กลางภาค',mid_score,'ปลายภาค',final_score,'เก็บ',quiz_score,'รวมเป็น',sum_score,'คะแนน')
+print('+++++++++++++++++++++++++++++')
+print('รหัส นศ. '+str(stu_id)+' ชื่อ '+str(stu_name))
+print('กลางภาค '+str(mid_score)+' ปลายภาค '+str(final_score)+' เก็บ '+str(quiz_score)+' รวมเป็น '+str(sum_score)+' คะแนน')
+print('+++++++++++++++++++++++++++++')
+print('รหัส นศ. {} ชื่อ {}'.format(stu_id,stu_name))
+print('กลางภาค {} ปลายภาค {} เก็บ {} รวมเป็น {} คะแนน'.format(mid_score,final_score,quiz_score,sum_score))
+print('+++++++++++++++++++++++++++++')
