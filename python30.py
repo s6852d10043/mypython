@@ -16,3 +16,4 @@ def calAndShow() :
 
 showProgramName()
 calAndShow()
+print("Bye Bye")
